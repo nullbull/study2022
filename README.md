@@ -4,7 +4,8 @@
 
 #### 剑指 Offer 45. 把数组排成最小的数 
 https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/
-
+#### 剑指 Offer 26. 树的子结构
+https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/
 
 
 ## Leetcode
@@ -20,3 +21,5 @@ https://leetcode.cn/problems/remove-k-digits/
 ### 二叉树
 #### 剑指 Offer 26. 树的子结构
 https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/
+#### 100. 相同的树
+https://leetcode.cn/problems/same-tree/

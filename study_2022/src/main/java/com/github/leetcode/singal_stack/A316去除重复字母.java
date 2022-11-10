@@ -1,4 +1,4 @@
-package leetcode;
+package com.github.leetcode.singal_stack;
 
 import java.util.Stack;
 

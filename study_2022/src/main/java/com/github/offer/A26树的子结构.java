@@ -1,6 +1,6 @@
-package offer;
+package com.github.offer;
 
-
+import com.github.TreeNode;
 /**
  * this is a desc
  *
