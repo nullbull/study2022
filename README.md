@@ -23,3 +23,21 @@ https://leetcode.cn/problems/remove-k-digits/
 https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/
 #### 100. 相同的树
 https://leetcode.cn/problems/same-tree/
+#### 104. 二叉树的最大深度
+https://leetcode.cn/problems/maximum-depth-of-binary-tree/
+#### 110. 平衡二叉树
+https://leetcode.cn/problems/balanced-binary-tree/
+#### 226. 翻转二叉树
+https://leetcode.cn/problems/invert-binary-tree/
+
+### 滑动窗口
+#### 3. 无重复字符的最长子串
+https://leetcode.cn/problems/longest-substring-without-repeating-characters/
+
+### 链表
+#### 206. 反转链表
+https://leetcode.cn/problems/reverse-linked-list/
+
+### 其他
+#### 146. LRU 缓存
+https://leetcode.cn/problems/lru-cache/
