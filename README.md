@@ -29,6 +29,16 @@ https://leetcode.cn/problems/maximum-depth-of-binary-tree/
 https://leetcode.cn/problems/balanced-binary-tree/
 #### 226. 翻转二叉树
 https://leetcode.cn/problems/invert-binary-tree/
+#### 94. 二叉树的中序遍历
+https://leetcode.cn/problems/binary-tree-inorder-traversal/
+#### 95. 不同的二叉搜索树 II
+https://leetcode.cn/problems/unique-binary-search-trees-ii/
+#### 96. 不同的二叉搜索树
+https://leetcode.cn/problems/unique-binary-search-trees-ii/
+#### 98. 验证二叉搜索树
+https://leetcode.cn/problems/validate-binary-search-tree/
+#### 99. 恢复二叉搜索树
+https://leetcode.cn/problems/recover-binary-search-tree/
 
 ### 滑动窗口
 #### 3. 无重复字符的最长子串
@@ -37,7 +47,16 @@ https://leetcode.cn/problems/longest-substring-without-repeating-characters/
 ### 链表
 #### 206. 反转链表
 https://leetcode.cn/problems/reverse-linked-list/
+#### 25. K 个一组翻转链表
+https://leetcode.cn/problems/reverse-nodes-in-k-group/
 
 ### 其他
 #### 146. LRU 缓存
 https://leetcode.cn/problems/lru-cache/
+
+#### 15. 三数之和
+https://leetcode.cn/problems/3sum/
+
+### 排序
+#### 215. 数组中的第K个最大元素
+https://leetcode.cn/problems/kth-largest-element-in-an-array/
