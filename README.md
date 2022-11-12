@@ -39,7 +39,26 @@ https://leetcode.cn/problems/unique-binary-search-trees-ii/
 https://leetcode.cn/problems/validate-binary-search-tree/
 #### 99. 恢复二叉搜索树
 https://leetcode.cn/problems/recover-binary-search-tree/
-
+#### 103. 二叉树的锯齿形层序遍历
+https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/
+#### 105. 从前序与中序遍历序列构造二叉树
+https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+#### 106. 从中序与后序遍历序列构造二叉树
+https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+#### 107. 二叉树的层序遍历2
+https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/
+#### 108. 将有序数组转换为二叉搜索树
+https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/
+#### 109. 有序链表转换二叉搜索树
+https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/
+#### 111. 二叉树的最小深度
+https://leetcode.cn/problems/minimum-depth-of-binary-tree/
+#### 112. 路径总和
+https://leetcode.cn/problems/path-sum/
+#### 113. 路径总和 II
+https://leetcode.cn/problems/path-sum-ii/
+#### 114. 二叉树展开为链表
+https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/
 ### 滑动窗口
 #### 3. 无重复字符的最长子串
 https://leetcode.cn/problems/longest-substring-without-repeating-characters/
@@ -60,3 +79,8 @@ https://leetcode.cn/problems/3sum/
 ### 排序
 #### 215. 数组中的第K个最大元素
 https://leetcode.cn/problems/kth-largest-element-in-an-array/
+
+
+### 动态规划
+#### 53. 最大子数组和
+https://leetcode.cn/problems/maximum-subarray/
