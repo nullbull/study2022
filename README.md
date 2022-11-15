@@ -59,6 +59,17 @@ https://leetcode.cn/problems/path-sum/
 https://leetcode.cn/problems/path-sum-ii/
 #### 114. 二叉树展开为链表
 https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/
+#### 116. 填充每个节点的下一个右侧节点指针
+https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/
+#### 117. 填充每个节点的下一个右侧节点指针 II
+https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/
+#### 124. 二叉树中的最大路径和
+https://leetcode.cn/problems/binary-tree-maximum-path-sum/
+#### 129. 求根节点到叶节点数字之和
+https://leetcode.cn/problems/sum-root-to-leaf-numbers/
+
+#### 145. 二叉树的后序遍历
+https://leetcode.cn/problems/binary-tree-postorder-traversal/
 ### 滑动窗口
 #### 3. 无重复字符的最长子串
 https://leetcode.cn/problems/longest-substring-without-repeating-characters/
