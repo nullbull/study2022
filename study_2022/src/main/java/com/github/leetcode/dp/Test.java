@@ -14,24 +14,23 @@ import java.util.Stack;
  */
 public class Test {
     public void dfs(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<>();
-        TreeNode pre = root;
         List<Integer> res = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode pre = null;
         while (root != null || !stack.isEmpty()) {
             while (root != null) {
-                stack.push(root);
-                root = root.left;
+                stack.push(root.left);
             }
             root = stack.peek();
-            if (root.right == null || root == pre) {
+            if (root.right == null || root.right == pre) {
                 res.add(root.val);
-                stack.pop();
                 pre = root;
+                root = null;
             } else {
                 stack.push(root.right);
-                root = root.right;
             }
         }
     }
+
 
 }
