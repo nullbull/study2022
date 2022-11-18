@@ -1,4 +1,4 @@
-package com.github.leetcode.other;
+package com.github.leetcode.dfs;
 
 /**
  * this is a desc
