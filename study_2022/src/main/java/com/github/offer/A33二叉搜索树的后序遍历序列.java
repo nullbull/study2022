@@ -17,7 +17,7 @@ public class A33二叉搜索树的后序遍历序列 {
         if (left >= right) {
             return true;
         }
-        int i = 0;
+        int i = left;
         int end = right;
         while (postorder[i] < postorder[end]) {
             i++;
@@ -26,6 +26,6 @@ public class A33二叉搜索树的后序遍历序列 {
         while (postorder[i] > postorder[end]) {
             i++;
         }
-        return i == end && dfs(postorder, left, mid) && dfs(postorder, mid + 1, right - 1);
+        return i == end && dfs(postorder, left, mid-1) && dfs(postorder, mid, right - 1);
     }
 }
