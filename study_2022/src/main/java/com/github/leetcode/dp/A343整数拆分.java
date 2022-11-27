@@ -14,7 +14,7 @@ public class A343整数拆分 {
         dp[2] = 1;
         for (int i = 3; i <= n; i++) {
             for (int j = 1; j < i - 1; j++) {
-                dp[i] = Math.max(dp[i], Math.max(dp[i-j] * j, j * (i - j)));
+                dp[i] = Math.max(dp[i] , Math.max(dp[i-j] * j, j * (i - j))) ;
             }
         }
         return dp[n];
