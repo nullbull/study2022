@@ -23,17 +23,8 @@ public class A503下一个更大元素II {
                int p = stack.pop();
                res[p] = cur;
             }
-//            res[i%nums.length] = stack.isEmpty() ? -1 : stack.peek() == i ? -1 : nums[stack.peek()];
             stack.push(i%nums.length);
         }
-//        for (int i = nums.length-1; i >= 0; i--) {
-//            while (!stack.isEmpty() && nums[stack.peek()] < nums[i]) {
-//                Integer pop = stack.pop();
-//                res[pop] = nums.length - i + pop;
-//            }
-//            res[i] = stack.isEmpty() ? -1 : i - stack.peek();
-//            stack.push(i);
-//        }
         return res;
     }
 
