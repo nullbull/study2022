@@ -26,7 +26,7 @@ public class A230二叉搜索树中第K小的元素 {
         if (root == null) {
             return;
         }
-        dfs(root, list);
+        dfs(root.left, list);
         list.add(root.val);
         if (list.size() == wantPos) {
             res = root.val;

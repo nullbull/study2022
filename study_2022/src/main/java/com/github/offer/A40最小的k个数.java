@@ -8,22 +8,32 @@ package com.github.offer;
  * @since 2022.11.16
  */
 public class A40最小的k个数 {
+
     int[] ans;
+
     public int[] getLeastNumbers(int[] arr, int k) {
-       ans  = new int[k];
-       quickSort(arr, 0, arr.length - 1, k);
-        if (k == arr.length) ans = arr;
-       return ans;
+        ans = new int[k];
+        quickSort(arr, 0, arr.length - 1, k);
+        if (k == arr.length) {
+            ans = arr;
+        }
+        return ans;
     }
 
     public void quickSort(int[] nums, int l, int r, int k) {
-        if (l > r) return;
+        if (l > r) {
+            return;
+        }
         int i = l;
         int j = r;
-        int temp =nums[l];
+        int temp = nums[l];
         while (i < j) {
-            while (j > i && nums[j] >= nums[l]) j--;
-            while (j > i && nums[i] <= nums[l]) i++;
+            while (j > i && nums[j] >= nums[l]) {
+                j--;
+            }
+            while (j > i && nums[i] <= nums[l]) {
+                i++;
+            }
             temp = nums[i];
             nums[i] = nums[j];
             nums[j] = temp;

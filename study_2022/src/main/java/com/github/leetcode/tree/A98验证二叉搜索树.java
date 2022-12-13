@@ -16,7 +16,7 @@ public class A98验证二叉搜索树 {
             return true;
         }
 
-        if (isValidBST(root.left)) {
+        if (!isValidBST(root.left)) {
             return false;
         }
         if (root.val <= pre) {
