@@ -3,6 +3,7 @@ package com.github.leetcode.backtracing;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -14,24 +15,28 @@ import java.util.List;
  */
 public class A40组合总和II {
 
-    List<List<Integer>> res = new ArrayList<>();
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        Arrays.sort(candidates);
-        dfs(new ArrayList<>(), candidates, target, 0, 0);
+    public List<List<Integer>> res = new ArrayList<>();
+    public List<List<Integer>> combinationSum2(int[] nums, int target) {
+        Arrays.sort(nums);
+        dfs(new ArrayList<>(), nums, 0, target);
         return res;
     }
-    public void dfs(List<Integer> list, int[]nums, int target, int startPos, int sum) {
-        if (target < sum) return;
-        if (target == sum) {
+    public void dfs(List<Integer> list, int[] nums, int pos, int target) {
+        if (target < 0) {
+            return;
+        }
+        if (target == 0) {
             res.add(new ArrayList<>(list));
         }
-        for (int i = startPos; i < nums.length; i++) {
-            if (i > 0 && nums[i-1] == nums[i]) continue;
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = pos; i < nums.length; i++) {
+            if (i > 0 && nums[i] == nums[i-1] && set.contains(nums[i])) {
+                continue;
+            }
             list.add(nums[i]);
-            sum += nums[i];
-            dfs(list, nums, target, i+1, sum);
+            set.add(nums[i]);
+            dfs(list, nums, i + 1, target - nums[i]);
             list.remove(list.size()-1);
-            sum -= nums[i];
         }
     }
 }

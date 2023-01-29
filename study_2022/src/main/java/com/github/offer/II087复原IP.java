@@ -26,7 +26,7 @@ public class II087复原IP {
             return;
         }
         if (list.size() == 4 && pos == s.length()) {
-            res.add(String.join(":", list));
+            res.add(String.join(".", list));
             return;
         }
         for (int i = pos; i < s.length() && i < pos + 3; i++) {

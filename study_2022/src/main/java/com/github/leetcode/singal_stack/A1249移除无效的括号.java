@@ -19,7 +19,7 @@ public class A1249移除无效的括号 {
             if (chars[i] == '(') {
                 stack.push(i);
                 valid[i] = true;
-            } else if (chars[i] == '(') {
+            } else if (chars[i] == ')') {
                 if (stack.isEmpty()) {
                     valid[i] = true;
                 }  else {

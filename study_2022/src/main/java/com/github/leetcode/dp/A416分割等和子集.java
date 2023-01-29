@@ -20,7 +20,6 @@ public class A416分割等和子集 {
         for (int i = 1; i < nums.length; i++) {
             for (int j = 0; j <= total; j++) {
                 dp[i][j] = dp[i-1][j];
-
                 if (nums[i] == j) {
                     dp[i][j] = true;
                     continue;

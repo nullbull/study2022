@@ -21,12 +21,13 @@ public class A113路径总和2 {
 
     public void dfs(List<Integer> path, TreeNode root, int targetSum) {
         if (root == null) return;
-        List<Integer> temp = new ArrayList<>(path);
-        temp.add(root.val);
+        path.add(root.val);
         if (root.val == targetSum && root.left == null && root.right == null) {
-            res.add(temp);
+            res.add(new ArrayList<>(path));
+            path.remove(path.size()-1);
         }
-        dfs(temp, root.left, targetSum - root.val);
-        dfs(temp, root.right, targetSum - root.val);
+        dfs(path, root.left, targetSum - root.val);
+        dfs(path, root.right, targetSum - root.val);
+        path.remove(path.size()-1);
     }
 }

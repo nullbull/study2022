@@ -26,7 +26,7 @@ public class A47全排列II {
         }
         for (int i = 0; i < nums.length; i++) {
             if (hasVisited[i]) continue;
-            if (hasVisited[i+1] && i > 0 && nums[i-1] == nums[i]) continue;
+            if (i > 0 && hasVisited[i-1]  && nums[i-1] == nums[i]) continue;
             list.add(nums[i]);
             hasVisited[i]=true;
             dfs(list, nums, hasVisited);

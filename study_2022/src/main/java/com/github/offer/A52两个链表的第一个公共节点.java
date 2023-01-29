@@ -30,10 +30,11 @@ public class A52两个链表的第一个公共节点 {
             firstGo = headB;
             secondGo = headA;
         }
-        int diff = Math.abs(lenA-lenB);
+        int diff = Math.abs(lenA - lenB);
         while (firstGo != null && secondGo != null) {
-            if (firstGo == secondGo) return firstGo;
-            else {
+            if (firstGo == secondGo) {
+                return firstGo;
+            } else {
                 if (diff == 0) {
                     secondGo = secondGo.next;
                 }

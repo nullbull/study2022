@@ -26,10 +26,8 @@ public class A99恢复二叉搜索树 {
             if (pre != null && pre.val >= root.val) {
                 if (errOne == null) {
                     errOne = pre;
-                    errTwo = root;
-                } else {
-                    errTwo = root;
                 }
+                errTwo = root;
             }
             pre = root;
             root = root.right;

@@ -22,14 +22,15 @@ public class A95不同的二叉搜索树2 {
     public List<TreeNode> generate(int left, int right) {
         List<TreeNode> res =  new ArrayList<>();
         if (left > right) {
+            res.add(null);
             return res;
         }
-        for (int i = left; i < right; i++) {
+        for (int i = left; i <= right; i++) {
             List<TreeNode> leftNodes = generate(left, i - 1);
             List<TreeNode> rightNodes = generate(i + 1, right);
-            TreeNode node = new TreeNode(i);
             for (TreeNode leftNode : leftNodes) {
                 for (TreeNode rightNode : rightNodes) {
+                    TreeNode node = new TreeNode(i);
                     node.left = leftNode;
                     node.right = rightNode;
                     res.add(node);

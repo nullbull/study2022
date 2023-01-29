@@ -27,7 +27,7 @@ public class A763划分字母区间 {
             right = Math.max(map.get(chars[i]), right);
             if (right == i) {
                 res.add(right - left + 1);
-                left++;
+                left = i + 1;
             }
         }
         return res;

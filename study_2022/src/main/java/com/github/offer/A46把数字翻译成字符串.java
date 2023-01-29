@@ -19,7 +19,7 @@ public class A46把数字翻译成字符串 {
             String temp = chars[i-1] + "" + chars[i];
             int val = Integer.parseInt(temp);
             if (val >= 10 && val <= 25) {
-                dp[i+1] = dp[i] + dp[i];
+                dp[i+1] = dp[i] + dp[i-1];
             } else {
                 dp[i+1] = dp[i];
             }

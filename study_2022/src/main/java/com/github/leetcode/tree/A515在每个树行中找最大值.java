@@ -20,7 +20,7 @@ public class A515在每个树行中找最大值 {
 
     public void dfs(List<Integer> res, TreeNode root, int level) {
         if (root == null) return;
-        if (res.size() < level) {
+        if (res.size() <= level) {
             res.add(root.val);
         } else {
             res.set(level, Math.max(res.get(level), root.val));

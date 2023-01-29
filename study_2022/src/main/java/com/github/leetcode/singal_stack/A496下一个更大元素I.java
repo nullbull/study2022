@@ -15,11 +15,11 @@ public class A496下一个更大元素I {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         Stack<Integer> stack = new Stack<>();
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int i = nums2.length-1; i >= 0; i--) {
-            while (!stack.isEmpty()&&nums2[stack.peek()] < nums2[i]) {
+        for (int i = nums2.length - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && nums2[stack.peek()] < nums2[i]) {
                 stack.pop();
             }
-            map.put(nums2[i], stack.isEmpty()?-1:nums2[stack.peek()]);
+            map.put(nums2[i], stack.isEmpty() ? -1 : nums2[stack.peek()]);
             stack.push(i);
         }
         int[] res = new int[nums1.length];

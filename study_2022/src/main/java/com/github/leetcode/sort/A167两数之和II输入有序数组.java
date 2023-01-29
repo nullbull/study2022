@@ -12,8 +12,8 @@ public class A167两数之和II输入有序数组 {
         int left = 0;
         int right = numbers.length-1;
         while (left < right) {
-            if (left + right == target) return new int[]{left, right};
-            else if (left + right > target) right--;
+            if (numbers[left] + numbers[right] == target) return new int[]{left+1, right+1};
+            else if (numbers[left] + numbers[right] > target) right--;
             else left++;
         }
         return new int[]{};
