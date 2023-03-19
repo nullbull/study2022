@@ -9,6 +9,7 @@ package com.github.leetcode.sort;
  */
 public class A34在排序数组中查找元素的第一个和最后一个位置 {
 
+
     public int[] searchRange(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;

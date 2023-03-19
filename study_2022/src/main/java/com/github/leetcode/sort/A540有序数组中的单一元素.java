@@ -15,17 +15,17 @@ public class A540有序数组中的单一元素 {
         while (left <= right) {
             int mid = (left + right) / 2;
             if (mid % 2 == 0) {
-                if (mid - 1 >= 0 && nums[mid] == nums[mid-1]) {
-                    right = mid-1;
-                } else if (mid + 1 < nums.length && nums[mid] == nums[mid+1]){
+                if (mid - 1 >= 0 && nums[mid] == nums[mid - 1]) {
+                    right = mid - 1;
+                } else if (mid + 1 < nums.length && nums[mid] == nums[mid + 1]) {
                     left = mid + 1;
                 } else {
                     return nums[mid];
                 }
             } else {
-                if (mid - 1 >= 0 && nums[mid] == nums[mid-1]) {
-                    left = mid+1;
-                } else if (mid + 1 < nums.length && nums[mid] == nums[mid+1]){
+                if (mid - 1 >= 0 && nums[mid] == nums[mid - 1]) {
+                    left = mid + 1;
+                } else if (mid + 1 < nums.length && nums[mid] == nums[mid + 1]) {
                     right = mid - 1;
                 } else {
                     return nums[mid];
@@ -37,6 +37,6 @@ public class A540有序数组中的单一元素 {
 
     public static void main(String[] args) {
 //        new A540有序数组中的单一元素().singleNonDuplicate(new int[]{1, 1, 2, 3, 3, 4, 4, 8, 8});
-        new A540有序数组中的单一元素().singleNonDuplicate(new int[]{1,2,2,3,3,4,4,8,8});
+        new A540有序数组中的单一元素().singleNonDuplicate(new int[]{1, 2, 2, 3, 3, 4, 4, 8, 8});
     }
 }

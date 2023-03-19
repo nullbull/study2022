@@ -24,7 +24,7 @@ public class A33搜索旋转排序数组 {
                     r = mid - 1;
                 }
             } else {
-                if (nums[mid] > target && nums[r] < target) {
+                if (nums[mid] > target && nums[l] < target) {
                     r = mid - 1;
                 } else {
                     l = mid + 1;

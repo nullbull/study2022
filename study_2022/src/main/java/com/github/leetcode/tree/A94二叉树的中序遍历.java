@@ -3,7 +3,6 @@ package com.github.leetcode.tree;
 import com.github.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
-import javax.transaction.TransactionRequiredException;
 
 /**
  * this is a desc

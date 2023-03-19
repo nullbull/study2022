@@ -3,7 +3,6 @@ package com.github.leetcode.other;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
-import sun.plugin.javascript.navig4.Link;
 
 /**
  * this is a desc
