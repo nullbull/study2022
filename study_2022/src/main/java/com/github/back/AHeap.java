@@ -13,33 +13,32 @@ import java.util.stream.Collectors;
 public class AHeap {
 
 
-    public void buildHeap(int[] nums, int len, int p) {
-        while (true) {
-            if (p > len) {
+    public void buildHeap(int[] nums, int len, int parent) {
+        int temp = nums[parent];
+        int child = parent * 2 + 1;
+        while (child < len) {
+            if (child + 1 < len && nums[child+1] > nums[child]) {
+                child = child + 1;
+            }
+            if (temp >= nums[child]) {
                 break;
             }
-            int maxPos = p;
-            int left = p * 2 + 1;
-            int right = p * 2 + 2;
-            if (left <= len && nums[left] > nums[p]) {
-                maxPos = left;
-            }
-            if (right <= len && nums[right] > nums[maxPos]) {
-                maxPos = right;
-            }
-            if (p == maxPos) {
-                break;
-            }
-            int temp = nums[p];
-            nums[p] = nums[maxPos];
-            nums[maxPos] = temp;
-            p = maxPos;
+            nums[parent] = nums[child];
+            parent = child;
+            child = parent * 2 + 1;
         }
+        nums[parent] = temp;
     }
 
     public void heap(int[] nums) {
-        for (int i = nums.length / 2 - 1; i >= 0; i--) {
-            buildHeap(nums, nums.length - 1, i);
+        for (int i = nums.length / 2 - 1 ; i >= 0; i--) {
+            buildHeap(nums, nums.length, i);
+        }
+        for (int i = nums.length - 1; i >= 0; i--) {
+            int temp = nums[0];
+            nums[0] = nums[i];
+            nums[i] = temp;
+            buildHeap(nums, i, 0);
         }
     }
 
