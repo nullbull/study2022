@@ -14,12 +14,11 @@ public class Test {
 
     private Test() {
     }
-
     public static Test getInstance() {
         if (instance == null) {
             synchronized (Test.class) {
                 if (instance == null) {
-                    return new Test();
+                    instance = new Test();
                 }
             }
         }

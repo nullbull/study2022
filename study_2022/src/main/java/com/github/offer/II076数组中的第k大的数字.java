@@ -38,16 +38,20 @@ public class II076数组中的第k大的数字 {
         int temp = nums[left];
         nums[left] = nums[l];
         nums[l] = temp;
-        if (l == target) {
+        if (l == target - 1) {
             res = nums[l];
             return;
         }
-        quickSort(nums, left, l - 1, target);
-        quickSort(nums, l + 1, right, target);
+        if (l + 1 > target) {
+            quickSort(nums, left, l - 1, target);
+        } else {
+            quickSort(nums, l + 1, right, target);
+        }
     }
 
     public static void main(String[] args) {
-        new II076数组中的第k大的数字().findKthLargest(new int[]{3,2,1,5,6,4}, 2);
+//        System.out.println(new II076数组中的第k大的数字().findKthLargest(new int[]{3,2,1,5,6,4}, 2));;
+        System.out.println(new II076数组中的第k大的数字().findKthLargest(new int[]{3,2,3,1,2,4,5,5,6}, 4));;
     }
 
 
