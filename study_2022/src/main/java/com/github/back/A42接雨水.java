@@ -13,12 +13,13 @@ public class A42接雨水 {
         Stack<Integer> stack = new Stack<>();
         int res = 0;
         for (int i = 0; i < height.length; i++) {
-            while ((!stack.isEmpty() && height[i] > height[stack.peek()])) {
+            while (!stack.isEmpty() && height[stack.peek()] < height[i]) {
                 int idx = stack.pop();
+                int high = height[idx];
                 if (stack.isEmpty()) {
-                    break;
+                    continue;
                 }
-                res += (Math.min(height[stack.peek()], height[i]) - height[idx]) * (i - stack.peek());
+                res += (Math.min(height[stack.peek()], height[i]) - high) * (i - stack.peek() - 1);
             }
             stack.push(i);
         }

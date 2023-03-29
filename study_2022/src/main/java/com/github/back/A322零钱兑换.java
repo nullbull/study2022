@@ -13,23 +13,21 @@ public class A322零钱兑换 {
 
 
     public int coinChange(int[] coins, int amount) {
-        int[][] dp = new int[coins.length + 1][amount + 1];
+        int[][] dp = new int[coins.length+1][amount+1];
         for (int i = 0; i < coins.length; i++) {
             Arrays.fill(dp[i], amount + 1);
         }
         dp[0][0] = 0;
         for (int i = 1; i <= coins.length; i++) {
-            int v = coins[i - 1];
+            int v = coins[i-1];
             for (int j = 0; j <= amount; j++) {
-                dp[i][j] = dp[i - 1][j];
+                dp[i][j] = dp[i-1][j];
                 if (j >= v) {
-                    dp[i][j] = Math.min(dp[i][j - v] + 1, dp[i-1][j]);
+                    dp[i][j] = Math.min(dp[i-1][j], dp[i][j-v] + 1);
                 }
             }
         }
-
         return dp[coins.length][amount] == amount + 1 ? -1 : dp[coins.length][amount];
-
     }
 
     public static void main(String[] args) {
